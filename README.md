@@ -1,5 +1,7 @@
 # rv-challenge
 
+![alt tag](./rvchallenge.png)
+
 ## Base infrastructure deployment
 
 The infrastructure is being deployed on AWS. To run the below infrastructure, IAM permissions are needed for atleast IAM, EC2, VPC and EKS. Also the "aws-iam-authenticator" and the "kubectl" binaries are required in the PATH
