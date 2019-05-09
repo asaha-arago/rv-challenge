@@ -91,6 +91,17 @@ $ kubectl apply -f namespace.yaml
 $ kubectl apply -f postgres.yaml
 $ kubectl apply -f migration.yaml (only after postgres pod is up and running)
 $ kubectl apply -f helloapp.yaml
+```
+
+In the "terraform" directory run 
+
+```
+$ terraform output public_subnet_ids
+```
+
+In the alb.yaml file of the "kubernetes" directory, the value of "alb.ingress.kubernetes.io/subnets" needs to be replaced with the output of the above terraform command
+
+```
 $ kubectl apply -f alb.yaml
 ```
 
