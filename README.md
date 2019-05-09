@@ -49,7 +49,7 @@ What this does
 
 ## The helloapp application
 
-* Repository : https://gitlab.com/anirbansaha/helloapp
+* Repository : https://github.com/sahaanirbantech/helloapp
 * Framework : Django
 * Python : 3.6
 * Database : Postgres
