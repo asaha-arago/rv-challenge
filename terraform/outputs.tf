@@ -1,5 +1,6 @@
 data "aws_subnet_ids" "public" {
     vpc_id = "${aws_vpc.rvc.id}"
+    depends_on = [ "aws_subnet.pub1", "aws_subnet.pub2" ]
 
     tags = {
         Scope = "Public"
